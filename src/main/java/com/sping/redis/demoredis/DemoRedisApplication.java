@@ -19,7 +19,7 @@ public class DemoRedisApplication {
     }
 
     @GetMapping("/test")
-    public String redisTest(){
+    public String redisTest() {
         String time = (String) redisTemplate.opsForValue().get("TIME");
 
         if (time == null) {
@@ -27,6 +27,7 @@ public class DemoRedisApplication {
             time = "0";
         }
         Integer times = Integer.valueOf(time);
+
         times++;
         redisTemplate.opsForValue().set("TIME", String.valueOf(times));
         return time;
