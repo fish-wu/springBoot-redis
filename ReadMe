@@ -1,0 +1,1 @@
+这是一个spring-boot+redis的测试项目，主要是练习docker-compose容器编排一键部署的测试项目。
