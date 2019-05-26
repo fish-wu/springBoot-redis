@@ -8,7 +8,6 @@ services:
     volumes:
       - ./redis_data/:/data/
       - ./redis.conf:/app/redis.conf
-
   app:
     build:
       dockerfile: ./Dockerfile
