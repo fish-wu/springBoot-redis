@@ -1536,8 +1536,7 @@
 <body class='typora-export'>
 <div id='write' class='is-node'><h3><a name='header-n0' class='md-header-anchor '></a>一条命令部署：</h3><h4><a
         name='header-n2' class='md-header-anchor '></a>./build.sh</h4>
-    调用当前目录下build.sh文件部署，文件内容：
-    <br/>
+    调用当前目录下build.sh文件部署，文件内容：<br/>
     <pre spellcheck="false" class="md-fences md-end-block contain-cm modeLoaded" lang="sh" style="break-inside: unset;"><div
             class="CodeMirror cm-s-inner CodeMirror-wrap"><div
             style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea
@@ -1582,15 +1581,15 @@
             cm-text="">​</span></span></pre></div></div></div></div></div><div
             style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 376px;"></div><div
             class="CodeMirror-gutters" style="display: none; height: 376px;"></div></div></div></pre>
-    ​ 分别对应：
-    ​<span>	</span> 1、返回到上一层<br/>
+    ​分别对应：
+    ​1、返回到上一层<br/>
     2、清除<br/>
     3、构建app的jar文件<br/>
     4、拷贝编译好的jar包到配制目录<br/>
     5、切换到deploy目录<br/>
     6、执行docker-compose 的构建文件<br/>
     7、docker-compose 启动<br/>
-    6调用执行的dokcer-compose.yml文件：
+    其中6调用执行的dokcer-compose.yml文件：
     <pre spellcheck="false" class="md-fences md-end-block contain-cm modeLoaded" lang="yml"
          style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap"><div
             style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea
@@ -1630,7 +1629,8 @@
             class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  - redis6379</span></pre></div></div></div></div></div><div
             style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 468px;"></div><div
             class="CodeMirror-gutters" style="display: none; height: 468px;"></div></div></div></pre>
-    版本3.1，配置了两个服务，一个redis一个app其中 dockerfile: ./Dockerfile内容为：
+    version: "3.1"===>版本3.1，配置了两个服务，一个redis一个app<br/>
+    其中 dockerfile: ./Dockerfile内容为：
     <pre spellcheck="false" class="md-fences md-end-block contain-cm modeLoaded" lang=""><div
             class="CodeMirror cm-s-inner CodeMirror-wrap"><div
             style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea
